@@ -1,0 +1,100 @@
+# Architecture Decision Record: Adoption of Anypoint Code Builder for Mule Application Development
+
+## Status
+
+__Accepted__ - Date: [Current Date]
+
+## Context
+
+Our development teams currently use various IDEs and tools for Mule application development, including Anypoint Studio desktop application, generic IDEs with limited Mule support, and text editors. This fragmented approach leads to inconsistent development experiences, varying productivity levels, and challenges in maintaining coding standards. We need a modern, cloud-native development environment that provides consistent tooling, enhanced collaboration capabilities, and seamless integration with the Anypoint Platform ecosystem.
+
+## Decision
+
+We will adopt __Anypoint Code Builder__ as our primary integrated development environment for Mule application development and integration projects.
+
+## Rationale
+
+### # Anypoint Code Builder
+
+### ## What is / Description
+
+Anypoint Code Builder is MuleSoft's modern, cloud-native IDE built on Visual Studio Code that provides comprehensive tooling for Mule application development:
+
+- __Cloud-Native Architecture__: Browser-based IDE with local development capabilities
+- __Visual Flow Designer__: Drag-and-drop interface for creating Mule flows
+- __Code Editor__: Advanced code editing with IntelliSense, syntax highlighting, and auto-completion
+- __Integrated Debugging__: Built-in debugger with breakpoints and variable inspection
+- __Connector Catalog__: Direct access to MuleSoft connectors and templates
+- __Git Integration__: Native version control with branch management
+- __Platform Integration__: Seamless connection to Anypoint Platform services
+- __Extension Ecosystem__: Support for VS Code extensions and custom plugins
+
+### ## Why / Use-case
+
+__Primary Business Drivers:__
+
+- __Developer Productivity__: Modern IDE experience with advanced coding assistance and automation
+- __Standardization__: Consistent development environment across all teams and projects
+- __Cloud-First Development__: Support for both local and cloud-based development workflows
+- __Collaboration__: Enhanced team collaboration through shared workspaces and real-time editing
+- __Platform Integration__: Native integration with Anypoint Exchange, API Manager, and Runtime Manager
+- __Rapid Development__: Pre-built templates, scaffolding, and code generation capabilities
+- __Modern Tooling__: Leverage VS Code ecosystem with Mule-specific enhancements
+- __Accessibility__: Browser-based access enabling development from any device
+
+## Alternatives Considered
+
+1. __Anypoint Studio (Desktop)__: Legacy desktop application with limited cloud integration
+2. __IntelliJ IDEA with Mule Plugin__: Good IDE but requires separate plugin management
+3. __Eclipse with Mule Tooling__: Open source but lacks modern features and platform integration
+4. __Generic VS Code__: Requires extensive manual configuration for Mule development
+
+## Consequences
+
+### Positive
+
+- Unified development experience across all teams
+- Improved developer productivity through modern tooling
+- Enhanced collaboration capabilities
+- Seamless integration with Anypoint Platform ecosystem
+- Reduced onboarding time for new developers
+- Cloud-native development support
+- Access to VS Code extension marketplace
+- Consistent coding standards and best practices enforcement
+
+### Negative
+
+- Migration effort from existing development environments
+- Learning curve for teams transitioning from Anypoint Studio
+- Dependency on internet connectivity for cloud features
+- Potential performance considerations for complex projects
+- Licensing costs for enterprise features
+
+## Implementation Plan
+
+1. __Phase 1__: Pilot program with select development teams
+2. __Phase 2__: Training and certification programs for all developers
+3. __Phase 3__: Migration of existing projects and development workflows
+4. __Phase 4__: Establishment of coding standards and best practices
+5. __Phase 5__: Integration with CI/CD pipelines and deployment automation
+
+## Technical Requirements
+
+- Modern web browser support (Chrome, Firefox, Safari, Edge)
+- Minimum system requirements for local development mode
+- Network connectivity for cloud features and platform integration
+- Git repository access for version control
+
+## Compliance
+
+This decision aligns with our enterprise architecture principles of:
+
+- __Modernization__: Adopting cloud-native development tools
+- __Standardization__: Consistent development environments
+- __Integration__: Seamless platform connectivity
+- __Productivity__: Enhanced developer experience and efficiency
+
+---
+
+__Decision Makers:__ Enterprise Architecture Team, Development Leadership\
+__Stakeholders:__ Mule Developers, DevOps Teams, Project Managers
